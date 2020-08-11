@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+ }
+
+/*---------------------utility---------------------*/
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Roboto', 'Noto Sans JP', 'sans-serif';
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	font-feature-settings: "palt";
+	font-size: 1.6rem;
+	letter-spacing: 0.05em;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.text-center{
+	text-align: center;
+}
+
+/*---------------------header---------------------*/
+.header{
+	background-image: url("../images/header/kv_img.jpg");
+/*	height: 600px;*/
+	height:42.8vw;
+	background-size: cover;
+	position: relative;
+}
+.header-text{
+	width: 100%;
+	background-color: rgba(7,133,123,0.68);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-45%);
+}
+.header-logo{
+	padding: 32px 0;
+}
+.header-img{
+	padding-bottom: 40px;
+}
+.header-img_sp{
+	display: none;
+}
+
+/*---------------------section 共通---------------------*/
+.section-title{
+	font-size: 3.6rem;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-align: center;
+	padding: 32px 0;
+}
+.title-black{
+	background-color: #444;
+}
+.title-green{
+	background-color: #07857B;
+}
+.text-wrapper{
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 80px 0 160px;
+}
+.text-wrapper_access{
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 80px 0 64px;
+}
+.section-text{
+	text-align: left;
+	line-height: 1.875;
+}
+
+/*---------------------guest---------------------*/
+.section-text_guest{
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 64px;
+	line-height: 1.875;
+}
+.guest-br{
+	display: none;
+}
+/*---------------------schedule---------------------*/
+.schedule-img{
+	width: 100%;
+}
+.schedule-img_sp{
+	display: none;
+	width: 100%;
+}
+/*---------------------address---------------------*/
+.text-color_626262{
+	color: #626262;
+}
+.address{
+	font-size: 13px;
+}
+.google-map{
+	position: relative;
+	padding-top: 26.3%;
+}
+.google-map iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*これだけでもいいかも？？ただし、マップの下に1px分のラインが出てしまう。なぜ？？*/
+/*
+.google-map iframe{
+	width: 100%;
+	height: 26.3vw;
+}
+*/
+
+/*---------------------entry---------------------*/
+.section-text_entry{
+	line-height: 1.875;
+}
+.info-list{
+	color: #626262;
+}
+.info-title{
+	font-weight: bold;
+}
+.info-detail{
+	margin-bottom: 40px;
+}
+.info-detail:last-of-type{
+	margin-bottom: 120px;
+}
+.form-wrapper{
+	max-width: 550px;
+	margin: 0 auto;
+}
+.form-item{
+	margin-bottom: 72px;
+}
+.form-title{
+	color: #444444;
+}
+.form-detail{
+	font-size: 1.6rem;
+	width: 100%;
+	padding: 8px 0;
+	outline: none;
+	border: none;
+	border-bottom: solid 1px #999;
+}
+.radio-title{
+	display: flex;
+}
+.form-title_work{
+	margin-right: 36px;
+/*	72-36=36*/
+}
+.form-radio{
+	display: flex;
+}
+.form-radio li{
+	margin-left: 36px;
+}
+.radio-parts{
+	appearance: none;
+	-webkit-appearance: none;
+	width: 18px;;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #c3c3c3;
+	outline: none;
+	vertical-align: -6px;
+	margin-right: 10px;
+}
+.radio-parts:checked{
+	background-color: #07857b;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 3px #07857b;
+}
+.entry-btn{
+	appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 360px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 0.2em;
+	color: #fff;
+	background-color: #07857b;
+	padding: 20px 0;
+	outline: none;
+	cursor: pointer;
+}
+
+/*---------------------footer---------------------*/
+.footer{
+	padding: 80px 0;
+	background-color: #454548;
+	color: #fff;
+}
+.footer-logo{
+	margin-bottom: 32px;
+}
+.footer-text{
+	font-size: 1.3rem;
+	line-height: 2.07;
+	margin-bottom: 64px;
+}
+.copyright{
+	font-size: 1.1rem;
+}
+
+
+
+
+@media screen and (max-width:768px){
+
+.header{
+	background-image: url("../images/header/kv_img__sp.jpg");
+	height: 80vw;
+}
+.header-logo{
+	padding: 16px 0;
+}
+.header-img{
+	padding-bottom: 16px;
+}
+.header-img_pc{
+	display: none;
+}
+.header-img_sp{
+	display: block;
+	width: 83.2%;
+	margin: 0 auto;
+}
+
+/*---------------------section 共通---------------------*/
+.section-title{
+	font-size: 2rem;
+	padding: 16px 0;
+}
+.section-text_guest{
+	margin-bottom: 40px;
+}
+.text-wrapper{
+	padding: 40px 20px 70px;
+}
+.text-wrapper_access{
+	padding: 40px 20px;
+}
+
+/*---------------------guest---------------------*/
+.guest-br{
+	display: block;
+}
+
+/*---------------------schedule---------------------*/
+.schedule-img{
+	display: none;
+}
+.schedule-img_sp{
+	display: block;
+}
+
+/*---------------------access---------------------*/
+.google-map{
+	padding-top: 66.66%;
+}
+
+/*---------------------entry---------------------*/
+.info-detail:last-of-type{
+	margin-bottom: 32px;
+}
+.radio-title{
+	display: block;
+}
+.form-item{
+	margin-bottom: 40px;
+}
+.form-item:last-of-type{
+	margin-bottom: 56px;
+}
+.form-title_work{
+	display: block;
+	margin: 0 0 24px;
+}
+.entry-btn{
+	width: 100%;
+	padding: 12px 0;
+}
+.form-radio li{
+	margin-left: 20px;
+}
+.form-radio li:first-of-type{
+	margin-left: 0;
+}
+
+/*---------------------footer---------------------*/
+.footer{
+	padding: 40px 0;
+}
+.footer-text{
+	margin-bottom: 32px;
+}
+
+
+
+
+
+}
